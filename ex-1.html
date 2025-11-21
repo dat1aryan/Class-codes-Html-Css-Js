@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="demo"></div>
+        
+        <script src="ex-1.js"></script>
+        
+        <script type="text/javascript">
+            let result;
+            let book = "maths";
+            
+            if (book == "history") {
+                result = "You selected history book";
+            } else if (book == "maths") {
+                result = "You selected maths book";
+            } else if (book == "Economics") {
+                result = "You selected Economics book";
+            } else {
+                result = "Unknown book selected";
+            }
+            
+            document.getElementById('demo').innerHTML = result;
+        </script>
+        
+        <p>Hello World!</p>
+    </body>
+</html>

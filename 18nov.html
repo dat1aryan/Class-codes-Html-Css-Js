@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div name="text">Hello World!</div>
+    <div class="output">The content of the div element is:</div>
+</body>
+<script>
+    const divEle = document.getElementsByName("text");
+    document.getElementsByClassName("output")[0].innerHTML += divEle[0].innerHTML;
+    console.log(document.getElementsByClassName("output")[0].innerHTML);
+</script>
+</html>

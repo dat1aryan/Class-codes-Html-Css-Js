@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Rotating Boxes</title>
+    <style>
+        @keyframes myAnimation {
+            0% {background-color: red; left: 0px; top: 0px; transform: rotate(0deg);}
+            25% {background-color: yellow;left: 200px;top: 0px; transform: rotate(90deg);}      
+            50% {background-color: blue;left: 200px;top: 200px; transform: rotate(180deg);}
+            75% {background-color: red;left: 0px;top: 200px; transform: rotate(270deg);}
+            100% {background-color: green;left: 0px;top: 0px; transform: rotate(360deg);}
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            
+            animation-name: myAnimation;
+            animation-duration: 4s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white; 
+            font-size: 10px;
+            text-align: center;
+
+            margin: 20px;
+            float: left;
+            border-radius: 0;
+        }
+
+        #box-1 {animation-timing-function: linear;}
+        #box-2 {animation-timing-function: ease;}
+        #box-3 {animation-timing-function: ease-in;}
+        #box-4 {animation-timing-function: ease-out;}
+        #box-5 {animation-timing-function: ease-in-out;}
+    </style>
+</head>
+<body>
+    <div id="box-1" class="box">linear</div>
+    <div id="box-2" class="box">ease</div>
+    <div id="box-3" class="box">ease-in</div>
+    <div id="box-4" class="box">ease-out</div>
+    <div id="box-5" class="box">ease-in-out</div>
+</body>
+</html>

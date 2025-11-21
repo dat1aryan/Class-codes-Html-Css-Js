@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>THis is the first paragraph.</p>
+    <p class="box">This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+    <div id="output"></div>
+    <script>
+        const boxParagraph = document.querySelector(".box");
+        const number = boxParagraph.innerHTML; 
+        const outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = "The content found is: " + number;
+    </script>
+</body>
+</html>
