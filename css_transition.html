@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 5px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            transition: width 2s, height 4s, background-color 3s, transform 2s;
+            transition-delay: 1s;
+        }
+
+        #div1 {
+            transition-timing-function: linear;
+        }
+        #div2 {
+            transition-timing-function: ease;
+        }
+        #div3 {
+            transition-timing-function: ease-in;
+        }
+        #div4 {
+            transition-timing-function: ease-out;
+        }
+        #div5 {
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover {
+            width: 300px;
+            background-color: purple;
+            height: 300px;
+            transform: rotate(180deg);
+        }
+        
+        button {
+            background-color: lightblue;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 1s ease-out, transform 1s ease-out;
+        }
+
+        button:hover {
+            background-color: lightgreen;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">linear</div>
+    <div id="div2">ease</div>
+    <div id="div3">ease-in</div>
+    <div id="div4">ease-out</div>
+    <div id="div5">ease-in-out</div>
+    <button>click here</button>
+    <div>Rotate Me!</div>
+</body>
+</html>

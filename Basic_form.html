@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="25sep.css"
+</head>
+<body>
+
+    <div class="form-container">
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="full_name">Enter your full name:</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Enter your password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm_password">Confirm your password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+            </div>
+
+            <div class="form-group">
+                <label>Enter your gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Enter your Date of Birth:</label>
+                <input type="date" id="dob" name="dob" placeholder="dd-mm-yyyy" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Enter your Address:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
