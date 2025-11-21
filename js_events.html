@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Div Changer</title>
+    <style>
+        #test {
+            width: 600px;
+            height: 100px;
+            background-color: red;
+            transition: all 0.5s;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">Hello World</div>
+    
+    <button onclick="handleclick()">Change Box</button>
+    
+    <script>
+        function handleclick() {
+            var div = document.getElementById("test");
+            div.style.backgroundColor = "blue";
+            div.style.height = "400px";
+        }
+    </script>
+</body>
+</html>
